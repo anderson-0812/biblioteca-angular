@@ -13,7 +13,7 @@ Tener instalado lo siguiente: instalado nodeJs, npm (en el readme del REST se en
 
 1. npm install -g @angular/cli (Nos permite crear proyectos desde cero de manera facil y sencilla)
 
-2. ng new biblioteca-webng (creamos un espacio de trabajo llamdo biblioteca-webng)
+2. ng new biblioteca-angular (creamos un espacio de trabajo llamdo biblioteca-angular)
   **Recomendacion:** luego de crear esto en local, crear el repositorio en git y usar estos comandos de subida 
     git add .
     git commit -m "Estructura angular"
