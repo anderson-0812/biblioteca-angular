@@ -19,3 +19,28 @@ Tener instalado lo siguiente: instalado nodeJs, npm (en el readme del REST se en
     git commit -m "Estructura angular"
     git remote add origin https://github.com/anderson-0812/biblioteca-angular.git
     git push -u origin master (si no se sube añadir -f para forzar el push => git push -u origin master -f)
+
+
+
+***COMANDOS UTILES***
+arrancar el servidor angular
+	* entramos a la carpeta creada y ponemos	
+	* ng serve o ng serve host 0.0.0.0 en local
+	* ingresamos al local host con puerto 4200	
+
+
+crear modelos en angular
+	ng generate class models/user o tb ng g class models/user
+
+crear un servicio 
+	ng g service services/user o tb ng g s services/user
+
+crear un componente
+	ng g component components/login o tb ng g c components/login
+	
+	ojo: cada componente tiene su propia vista y css
+
+
+ng build
+	se compila y arroja una appa para ya usar en produccion 
+	solo le subimos el dist a ejemplo heroku 
