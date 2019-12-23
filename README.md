@@ -44,3 +44,8 @@ crear un componente
 ng build
 	se compila y arroja una appa para ya usar en produccion 
 	solo le subimos el dist a ejemplo heroku 
+
+
+***LINKS PARA TEMPLATES CSS***
+https://bootswatch.com/
+https://getbootstrap.com/docs/4.3/getting-started/introduction/	
