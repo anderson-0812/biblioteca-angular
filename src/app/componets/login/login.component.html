@@ -1,1 +1,26 @@
-<p>login works!</p>
+<div class="wrapper">
+    <div class="container my-5">
+        <div class="d-flex justify-content-center mb-4">
+            <img src="" alt="logo" width="175" height="55">
+        </div>
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                    <div class="form-group">
+                        <input type="mail" class="form-control" name="mail" #mail="ngModel" [(ngModel)]="user.mail" pattern="[a-z0-9._%+-]+@[a-z0-9._]+\.[a-z]{2,4}$" required>
+                        <label class="ph-area">Email</label>
+                        <span class="text-white" *ngIf="!mail.valid && mail.touched">!el email es obligatorio</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" #password="ngModel" [(ngModel)]="user.password"  class="form-control" required>
+                        <label class="ph-area">Password</label>
+                        <span class="text-white" *ngIf="!password.valid && password.touched">!el password es obligatorio</span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button [disabled]="!loginForm.form.valid" class="btn btn-info">{{ title }}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

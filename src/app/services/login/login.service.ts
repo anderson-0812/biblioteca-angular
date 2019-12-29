@@ -11,6 +11,7 @@ import { User } from '../../models/user/user';
 export class LoginService {
   public url: string;
   public userSelected: User;
+  public identity;
   public token;
 
   constructor(public http: HttpClient) {
@@ -34,5 +35,30 @@ export class LoginService {
 
     return this.http.post(this.url + 'login', params, {headers});
 
+  }
+
+  getIdentity() {
+    // de mi json extraigo el campo identidad
+    const identity = JSON.parse(localStorage.getItem('identity'));
+
+    if (identity !== 'undefined') {
+      this.identity = identity;
+    } else {
+      this.identity = null;
+    }
+
+    return this.identity;
+  }
+  getToken() {
+    // localstorage es una memoria delnavegador
+    const token = localStorage.getItem('token'); // almacena en el navegador el token
+
+    if (token !== 'undefined') {
+      this.token = token;
+    } else {
+      this.token = null;
+    }
+
+    return this.token;
   }
 }
