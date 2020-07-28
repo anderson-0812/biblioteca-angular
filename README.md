@@ -15,6 +15,7 @@ Tener instalado lo siguiente: instalado nodeJs, npm (en el readme del REST se en
 
 2. ng new biblioteca-angular (creamos un espacio de trabajo llamdo biblioteca-angular)
   **Recomendacion:** luego de crear esto en local, crear el repositorio en git y usar estos comandos de subida 
+    git init
     git add .
     git commit -m "Estructura angular"
     git remote add origin https://github.com/anderson-0812/biblioteca-angular.git
